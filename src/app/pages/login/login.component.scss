@@ -1,0 +1,133 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+}
+
+.containerLogin{
+    margin: 8px;
+    display: inline-flex;
+    padding: 48px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    
+}
+
+.fatherClass{
+    margin: 8px;
+}
+.signAccounts{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-self: stretch;
+}
+.title{
+    text-align: center;
+    /* Header/3 */
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 700;
+}
+.orLogin{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+.orLogin span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+.orLogin p {
+    text-align: center;
+    font-size: 14px;
+    font-family: Inter;
+    margin: 8px;
+}
+.iconAccount{
+    border: none;
+    background-color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+.iconAccount .googleIcon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-image: var(--iconGoogle);
+}
+
+.iconAccount .facebookIcon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-image: var(--iconGoogle);
+}
+
+.iconAccount .gitIcon{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-image: var(--iconGoogle);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+
+}
+.input input{
+    display: flex;
+    height: 44px;
+    padding: 8px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+.containerRemember{
+    display: flex;
+    align-items: flex-start;
+    gap: 105px;
+}
+.buttonSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+.buttonSubmit button{
+    display: flex;
+    height: 44px;
+    padding: 16px 12px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    text-align: center;
+    /* Paragraph/Bold */
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: #4F90F0;
+    color: white;
+}
+.createAccount{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+}
+
