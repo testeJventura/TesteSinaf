@@ -46,7 +46,7 @@
 }
 .orLogin p {
     text-align: center;
-    font-size: 14px;
+    font-size: var(--fontSizeDefault);
     font-family: Inter;
     margin: 8px;
 }
@@ -58,6 +58,8 @@
 }
 .iconAccount .googleIcon{
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 3rem;
     height: 3rem;
     background-repeat: no-repeat;
@@ -66,18 +68,22 @@
 
 .iconAccount .facebookIcon{
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 3rem;
     height: 3rem;
     background-repeat: no-repeat;
-    background-image: var(--iconGoogle);
+    background-image: var(--iconFacebook);
 }
 
 .iconAccount .gitIcon{
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     width: 3rem;
     height: 3rem;
     background-repeat: no-repeat;
-    background-image: var(--iconGoogle);
+    background-image: var(--iconGithub);
 }
 
 .input{
@@ -96,11 +102,43 @@
     gap: 8px;
     align-self: stretch;
 }
+.inputEmail{
+    position: relative;
+}
+.inputEmail fa-icon{
+    position: absolute;
+    top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  
+}
+.inputPassword{
+    position: relative;
+}
+.inputPassword fa-icon {
+    position: absolute;
+    top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+
+}
 .containerRemember{
     display: flex;
     align-items: flex-start;
     gap: 105px;
 }
+.remember{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.remember label,.forgotPassword p{
+    font-size: var(--fontSizeDefault);
+    font-family: Inter;
+    font-weight: 700;
+}
+
 .buttonSubmit{
     display: flex;
     justify-content: center;
@@ -117,7 +155,7 @@
     width: 100%;
     text-align: center;
     /* Paragraph/Bold */
-    font-size: 14px;
+    font-size: var(--fontSizeDefault);
     font-family: Inter;
     font-weight: 700;
     border-radius: 4px;

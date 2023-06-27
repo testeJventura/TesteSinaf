@@ -1,31 +1,36 @@
 <div class="container">
-    <form (ngSubmit)="teste()">
+    <form (ngSubmit)="onSubmit()">
         <div class="containerLogin">
- 
-                <h3 class="title">
-                    Login in to your account
-                </h3>
-                <div class="orLogin">
-                    <span></span>
-                    <p>or</p>
-                    <span></span>
-                </div>
-                <div class="signAccounts ">
 
-                    <button class="iconAccount "><span class="googleIcon"></span></button>
-                    <button class="iconAccount "><span class="facebookIcon"></span></button>
-                    <button class="iconAccount "><span class="gitIcon"></span></button>
-
-                </div>
-          
-            <div class="input inputEmail ">
-                <label for="email">Email</label>
-                <input type="text" name="email">
+            <h3 class="title">
+                Login in to your account
+            </h3>
+            <div class="orLogin">
+                <span></span>
+                <p>or</p>
+                <span></span>
             </div>
-            <div class="input inputPassword ">
+            <div class="signAccounts ">
+
+                <button class="iconAccount "><span class="googleIcon"></span></button>
+                <button class="iconAccount "><span class="facebookIcon"></span></button>
+                <button class="iconAccount "><span class="gitIcon"></span></button>
+
+            </div>
+
+            <div class="input  ">
+                <label for="email">Email</label>
+                <div class="input inputEmail ">
+                <input type="text" name="email" id="emailValue">
+                <i (click)="treshValue()"><fa-icon [icon]="faTrash" ></fa-icon></i>
+                </div>
+            </div>
+            <div class="input">
                 <label for="password">Password</label>
-                <input type="password" name="password">
-                <i class="fas fa-search"></i>
+                <div class="input inputPassword">
+                <input type="password" name="password" id="password">
+                <i (click)="eyePassword()"><fa-icon [icon]="faEyeSlash" id="eye" ></fa-icon></i>
+            </div>
             </div>
             <div class="containerRemember ">
                 <div class="remember">
@@ -33,7 +38,7 @@
                     <label for="remember">Remember me</label>
                 </div>
                 <div class="forgotPassword">
-                    <a href="">Forgot password?</a>
+                    <p >Forgot password?</p>
                 </div>
             </div>
             <div class="buttonSubmit ">

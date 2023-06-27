@@ -9,6 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { Page1Component } from './pages/page1/page1.component';
 import { AutorizadoFalseComponent } from './pages/autorizado-false/autorizado-false.component';
 import { FormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
